@@ -20,10 +20,10 @@ let convertToJSON = function(response) {
 let updateWeather = function(dataFromService) {
   iconElement = document.querySelector('#weather img');
   iconUrl = "http://openweathermap.org/img/w/" + dataFromService.weather[0].icon + ".png";
-  iconElement.src = iconUrl
+  iconElement.src = iconUrl;
 
   document.querySelector("#weather h4").innerHTML = dataFromService.name;
-  document.querySelector("#weather a").innerHTML = dataFromService.main.temp.toFixed(0)
+  document.querySelector("#weather a").innerHTML = dataFromService.main.temp.toFixed(0);
 }
 
 let link = document.getElementById("get_forecast")
